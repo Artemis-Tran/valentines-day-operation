@@ -44,7 +44,7 @@ noBtn.addEventListener('click', () => {
     noClickCount++;
     
     // Change Image
-    mainImg.src = "assets/snoopy-sad.jpg";
+    mainImg.src = "assets/sad-snoopy.jpg";
 
     // Change Text
     const messageIndex = Math.min(noClickCount, messages.length - 1);
