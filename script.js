@@ -43,8 +43,14 @@ createHearts();
 noBtn.addEventListener('click', () => {
     noClickCount++;
     
-    // Change Image
-    mainImg.src = "assets/sad-snoopy.jpg";
+    // Change Image based on click count
+    if (noClickCount === 1) {
+        mainImg.src = "assets/sad-snoopy.jpg"; // Original sad
+    } else if (noClickCount === 2) {
+        mainImg.src = "assets/sad-snoopy-2.png"; // Crying
+    } else if (noClickCount >= 3) {
+        mainImg.src = "assets/sad-snoopy-3.png"; // Devastated
+    }
 
     // Change Text
     const messageIndex = Math.min(noClickCount, messages.length - 1);
@@ -72,7 +78,7 @@ noBtn.addEventListener('click', () => {
 // Yes Button Interaction
 yesBtn.addEventListener('click', () => {
     mainImg.src = "assets/snoopy_happy.png";
-    question.textContent = "Yay! I knew you would say yes! ❤️";
+    question.textContent = "WOOOOOOOOOOOOO ❤️";
     
     // Remove buttons
     document.querySelector('.btn-group').style.display = 'none';
