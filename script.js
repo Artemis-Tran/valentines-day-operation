@@ -9,7 +9,7 @@ const messages = [
     "No",
     "Are you sure?",
     "Really sure?",
-    "Pookie please...",
+    "Please...",
     "Just think about it!",
     "If you say no, I will be really sad...",
     "I will be very very very sad...",
@@ -78,7 +78,7 @@ noBtn.addEventListener('click', () => {
 // Yes Button Interaction
 yesBtn.addEventListener('click', () => {
     mainImg.src = "assets/snoopy_happy.png";
-    question.textContent = "WOOOOOOOOOOOOO ❤️";
+    question.textContent = "WOOOOOOOOOOOOO 👅👅👅👅👅👅👅";
     
     // Remove buttons
     document.querySelector('.btn-group').style.display = 'none';
